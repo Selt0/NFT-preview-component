@@ -24,6 +24,20 @@ p, .media-content p {
   border-radius: 15px;
 }
 
+.image.is-square:hover .is-overlay {
+  border-radius: 15px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(32, 231, 226, 0.4);
+  transition: 0.2s background-color ease;
+}
+
+.image.is-square:hover img {
+  z-index: 0;
+}
+
 a.title {
   color: #fff;
   display: block;
